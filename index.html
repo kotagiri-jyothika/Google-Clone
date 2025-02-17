@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .home{
+            width: 100vw;
+            height: 100vh;
+           background-image: url(image.png);
+           background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center{
+            width: 60%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+         }
+        .i{
+            color: rgb(15, 6, 6);
+            font-size: 30px;
+            margin:  0px 20px;
+        }
+        .memu{
+            display: flex;
+            background-color: white;
+            max-width: 600px;
+            border: none;
+            width: 80%;
+            border-radius: 20px;
+            align-items: center;
+            padding: 0px 20px;
+            gap: 20px;
+            font-size: 18px;
+          }
+          .text{
+            width: 80%;
+            border-radius: 20px;
+            font-size: 15px;
+            outline: none;
+            border: none;
+           width: 100%;
+           padding: 10px;
+            }
+        .search{
+            width: 80%;
+            border-radius: 20px;
+            font-size: 15px;
+            outline: none;
+            border: none;
+            width: 100%;
+        }
+        .apps{
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          padding: 15px;
+          cursor: pointer;
+
+        }
+        .circle{
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            
+           
+        }
+        .insta{
+            width: 100%;
+            border-radius: 50%;
+        }
+        .block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .apps:hover{
+            background-color: rgba(255, 255, 255, 0.178);
+            border-radius: 5px;
+            .dot{
+                opacity: 1;
+            }
+        }
+        .dot{
+            font-size: 20px;
+            position: relative;
+            left: 34px; 
+            color: black;
+            opacity: 0;
+            transition: 0.4s all ease;
+        }
+        .right{
+            width: 300px;
+            height: 50px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+       .add{
+        width: 0px;
+        color: white;
+       }
+       .pro{
+        width: 40px;
+        border-radius: 50%;
+       }
+       .p{
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <div class="center">
+         <img src="google.png"  alt="" width="60%" style="margin-bottom: 30px;">
+         <div class="memu">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <form action="https://www.google.com/search" class="text">
+                <input type="text" class="search" placeholder="Search Google or type a URL" name="q" >
+            </form>
+            <i class="fas fa-camera camera-icon"></i>
+            <i class="fas fa-microphone"></i>
+            </div>
+            <div class="block">
+                <div class="apps">
+                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                    <div class="circle">
+                        <img src="insta.png" width="100%" class="insta" alt="">
+                    </div>
+                    <p>instagram</p>
+            </div>
+            <div class="apps">
+                <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                <div class="circle">
+                    <img src="chatgpt.png" width="100%" class="insta" alt="">
+                </div>
+                <p>chatgpt</p>
+        </div><div class="apps">
+            <i class="fa-solid fa-ellipsis-vertical dot"></i>
+            <div class="circle">
+                <img src="linkedin.png" width="100%" class="insta" alt="">
+            </div>
+            <p>linkedin</p>
+    </div><div class="apps">
+        <i class="fa-solid fa-ellipsis-vertical dot"></i>
+        <div class="circle">
+            <img src="whatsapp.png" width="100%" class="insta" alt="">
+        </div>
+        <p>whatsapp</p>
+    </div><div class="apps">
+        <i class="fa-solid fa-ellipsis-vertical dot"></i>
+        <div class="circle">
+            <img src="plus.png" width="100%" class="insta" alt="">
+        </div>
+        <p>plus</p>
+    </div>
+           
+        </div>
+        </div>
+        </div>
+        <div class="right">
+            <p class="p">Gmail</p>
+            <p class="p">Images</p>
+            <div class="dotts">
+               
+            <i class="fa-solid fa-ellipsis-vertical add"></i>
+            <i class="fa-solid fa-ellipsis-vertical add"></i>
+            <i class="fa-solid fa-ellipsis-vertical add"></i>
+            </div>
+            <img src="pro.png" class="pro">
+        </div>
+</body>
+</html>
